@@ -9,14 +9,26 @@
     font-style: normal;
 }
 body{
-    background-color: #000;
+    background-color: #000000;
     height: 100vh;
 
 }
-
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #33ff00;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
 }
 /* ESTILO DO CABEÇALHO */
 header{
@@ -29,14 +41,14 @@ header > .interface{
     justify-content: space-between;
 }
 header a{
-    color: #7d7d7d;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
  
 header a:hover{
-    color:#fff; 
+    color:#33ff00; 
     transform: scale(1.05);
 }
 
@@ -49,16 +61,33 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #00ff08;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
+
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #33ff00;
 }
 
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #00ff08;
+/*TOPOSITE*/
+
+section.sitetopo{
+    padding: 40px 4%;
+}
+
+section.sitetopo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.sitetopo h1{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.sitetopo h1 span{
+    color: #33ff00;
+}
+
+.sitetopo .txt-sitetopo{
+    color: #ffffff;
 }
