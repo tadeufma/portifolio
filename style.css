@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    font-weight: 100;
+    /*font-weight: 100;*/
     font-style: normal;
 }
 body{
@@ -29,6 +29,7 @@ body{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: .2s;
 }
 /* ESTILO DO CABEÇALHO */
 header{
@@ -40,7 +41,7 @@ header > .interface{
     align-items: center;
     justify-content: space-between;
 }
-header a{
+a{
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
@@ -79,15 +80,31 @@ section.sitetopo .flex{
     gap: 90px;
 }
 
-.sitetopo h1{
+.sitetopo .txt-sitetopo h1{
     color: #ffffff;
-    font-size: 40px;
+    font-size: 42px;
 }
 
-.sitetopo h1 span{
+.sitetopo .txt-sitetopo h1 span{
     color: #33ff00;
 }
 
-.sitetopo .txt-sitetopo{
+.sitetopo .txt-sitetopo p{
     color: #ffffff;
+}
+
+.sitetopo .img-sitetopo{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
 }
