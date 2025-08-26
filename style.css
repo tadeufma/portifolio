@@ -31,6 +31,15 @@ body{
     cursor: pointer;
     transition: .2s;
 }
+
+h2.titulo{
+    color: #fff;
+    font-size: 42px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #33ff00;
+}
 /* ESTILO DO CABEÇALHO */
 header{
     padding: 40px 4%;
@@ -66,8 +75,8 @@ header nav ul li{
 
 .btn-contato button:hover{
     box-shadow: 0px 0px 8px #33ff00;
+    
 }
-
 /*TOPOSITE*/
 
 section.sitetopo{
@@ -91,20 +100,96 @@ section.sitetopo .flex{
 
 .sitetopo .txt-sitetopo p{
     color: #ffffff;
+    margin: 20px 0; /* LINHA ADICIONADA: Adiciona espaço acima e abaixo do parágrafo */
+}
+
+/* BLOCO NOVO ADICIONADO PARA CORRIGIR O ESPAÇAMENTO */
+.sitetopo .txt-sitetopo .btn-contato{
+    margin-top: 30px;
 }
 
 .sitetopo .img-sitetopo{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-
 }
 
 @keyframes flutuar{
     0%{
         top: 0;
-
     }
     100%{
         top: 30px;
     }
+}
+
+/*ESTILO DAS ESPECIALIDADES*/
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff73;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 72px;
+    color: #33ff00;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 29px;
+    margin: 15px 0;
+}
+
+/*ESTILO SOBRE*/
+section.sobremim{
+    padding: 40px 4%;
+}
+
+section.sobremim .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobremim .txt-sobremim h2{
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobremim .txt-sobremim h2 span{
+    color: #33ff00;
+    display: block;
+}
+
+.sobremim .txt-sobremim p{
+    color: #fff;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobremim .txt-sobremim .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #33ff00;
+    font-size: 21px;
+    cursor: pointer;
+    margin: 0px 4px;
 }
