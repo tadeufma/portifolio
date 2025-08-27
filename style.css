@@ -22,7 +22,7 @@ html{
 
 body{
     background-color: var(--cor-preta);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .interface{
@@ -33,8 +33,6 @@ body{
 .flex{
     display: flex;
 }
-
-/* MELHORIA DE ACESSIBILIDADE: Estilo de foco para todos os elementos interativos */
 a:focus-visible, button:focus-visible {
     outline: 2px solid var(--cor-verde);
     outline-offset: 3px;
@@ -43,7 +41,7 @@ a:focus-visible, button:focus-visible {
 
 .btn-contato button{
     padding: 10px 40px;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem; 
     font-weight: 600;
     background-color: var(--cor-verde);
     border: 0;
@@ -59,7 +57,7 @@ a:focus-visible, button:focus-visible {
 
 h2.titulo{
     color: var(--cor-branca);
-    font-size: 2.375rem; /* 38px */
+    font-size: 2.375rem; 
     text-align: center;
     margin-bottom: 40px;
 }
@@ -113,7 +111,7 @@ section.sitetopo .flex{
 
 .sitetopo .txt-sitetopo h1{
     color: var(--cor-branca);
-    font-size: 2.625rem; /* 42px */
+    font-size: 2.625rem; 
     line-height: 1.2;
 }
 
@@ -153,7 +151,7 @@ section.especialidades .flex{
     border-radius: 25px;
     margin-top: 45px;
     transition: .2s;
-    flex-basis: 350px; /* Define uma base de largura para os cards */
+    flex-basis: 350px; 
 }
 
 .especialidades .especialidades-box:hover{
@@ -161,13 +159,15 @@ section.especialidades .flex{
     box-shadow: 0 0 12px var(--sombra-branca-suave);
 }
 
-.especialidades .especialidades-box i{
-    font-size: 4.5rem; /* 72px */
-    color: var(--cor-verde);
+.especialidades .especialidades-box img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    
 }
 
 .especialidades .especialidades-box h3{
-    font-size: 1.75rem; /* 28px */
+    font-size: 1.75rem; 
     margin: 15px 0;
 }
 
@@ -183,7 +183,7 @@ section.sobremim .flex{
 
 .sobremim .txt-sobremim h2{
     color: var(--cor-branca);
-    font-size: 2.5rem; /* 40px */
+    font-size: 2.5rem; 
     line-height: 40px;
     margin-bottom: 30px;
 }
@@ -198,21 +198,25 @@ section.sobremim .flex{
     margin: 20px 0;
     text-align: justify;
 }
-
-
-.sobremim .txt-sobremim .btn-social a{
+.sobremim .txt-sobremim .btn-social a {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: var(--cor-verde);
-    color: var(--cor-preta);
-    font-size: 1.5rem; /* 24px */
-    text-decoration: none;
     margin: 0 5px;
-    display: inline-flex; /* Usado para centralizar o ícone */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: .2s;
+}
+
+.sobremim .txt-sobremim .btn-social a img {
+    width: 50%; 
+    fill: var(--cor-preta);
+    transition: .2s;
+}
+.sobremim .txt-sobremim .btn-social a:hover img {
+    fill: var(--cor-branca);
 }
 
 .sobremim .txt-sobremim .btn-social a:hover {
@@ -230,8 +234,6 @@ section.portfolio .interface{
     box-shadow: 0px 0px 40px 10px var(--sombra-branca-suave);
     border-radius: 30px;
 }
-
-/* MELHORIA DE RESPONSIVIDADE: Adicionado flex-wrap e gap */
 section.portfolio .flex{
     justify-content: space-around;
     flex-wrap: wrap;
@@ -264,7 +266,7 @@ section.portfolio .flex{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem; 
     font-weight: 600;
     color: var(--cor-branca);
     opacity: 0;
@@ -322,5 +324,52 @@ form .btn-enviar input[type=submit]{
     cursor: pointer;
     text-align: center;
     transition: .2s;
+}
+form .btn-enviar input[type=submit]:hover{
+    box-shadow: 0px 0px 8px var(--sombra-verde-suave);
+    transform: scale(1.05);
+}
+@media (max-width: 760px) {
+    .sitetopo .flex {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    section.especialidades .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.sobremim .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.portfolio .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ESTILO DO RODAPÉ*/
+footer {
+    padding: 40px 4%;
+    background-color: #0a0a0a; 
+    box-shadow: 0 -5px 15px -5px #33ff0033; 
+}
+
+footer .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #a0a0a0; 
+    text-align: center;
+    font-size: 16px;
+}
+
+footer p span {
+    color: #33ff00; 
+    font-weight: 600;
 }
