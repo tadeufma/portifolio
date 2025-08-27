@@ -12,97 +12,142 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!--FIM BOOTSTRAP ICONS-->
     <link rel="stylesheet" href="style.css">
-    <title>Portifólio Tadeu Felipe</title>
+    <!-- CORREÇÃO DE QUALIDADE: Ortografia de "Portfólio" -->
+    <title>Portfólio Tadeu Felipe</title>
 </head>
 <body>
     
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
-                    <img src="images/logo.png" alt="Logo do portifolio Tadeu Felipe">
+                <a href="#contato">
+                    <img src="images/logo.png" alt="Logo do portfólio Tadeu Felipe">
                 </a>
-            </div><!--logo-->
-                      
+            </div><!-- Fim da div .logo -->
+            
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <!-- MELHORIA: Links de navegação apontando para as seções da página -->
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
+
             <div class="btn-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>Contato</button>
                 </a>
-            </div><!--btn-contato-->
-        </div><!--interface-->
-        <header>
+            </div><!-- Fim da div .btn-contato -->
+        </div><!-- Fim da div .interface -->
+    </header> <!-- CORREÇÃO ESTRUTURAL: O header principal termina aqui. -->
+
+    <!-- CORREÇÃO ESTRUTURAL: A tag <main> começa logo após o header e envolve todo o conteúdo principal -->
     <main>
-        <section class="sitetopo">
+        <section class="sitetopo" id="inicio">
             <div class="interface">
-                        <Div class="flex">
+                <!-- CORREÇÃO DE QUALIDADE: "Div" com "D" maiúsculo corrigido para "div" -->
+                <div class="flex">
                     <div class="txt-sitetopo">
                         <h1>DA MENTE PARA O MUNDO DIGITAL<span>.</span></h1>
                         <p>Tudo começa com um lampejo de genialidade — uma ideia, um plano, um sonho. Acreditamos que esses conceitos não devem permanecer apenas na sua mente, e nosso propósito é ser a ponte que leva a sua visão do pensamento para o mundo digital. Com expertise em tecnologia, design e estratégia, transformamos o intangível em algo real, funcional e impactante. Nós codificamos sua inspiração, projetamos sua ambição e construímos a sua presença digital, garantindo que a sua ideia não apenas exista, mas prospere e se conecte com as pessoas que você deseja alcançar.</p>
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#contato">
                                 <button>Fale conosco</button>
                             </a> 
-                        </div>
-                    </div>
-                    <div class="img-sitetopo">
-                        <img src="images/tadeufoto.png" alt="">
-                    </div>
-                            </div><!--toposite-->
-                        </Div><!--flex-->
+                        </div><!-- Fim da div .btn-contato -->
+                    </div><!-- Fim da div .txt-sitetopo -->
 
-                    </div> <!--interface-->
-                </section><!--sitetopo-->
-    </main>
-        <section class="especialidades">
+                    <div class="img-sitetopo">
+                        <!-- CORREÇÃO DE ACESSIBILIDADE: Adicionado texto alternativo descritivo -->
+                        <img src="images/tadeufoto.png" alt="Foto de Tadeu Felipe sorrindo, usando óculos e camisa social">
+                    </div><!-- Fim da div .img-sitetopo -->
+                </div><!-- Fim da div .flex -->
+            </div> <!-- Fim da div .interface -->
+        </section><!-- Fim da section .sitetopo -->
+    
+        <section class="especialidades" id="especialidades">
             <div class="interface">
-            <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
-            <div class="flex">
-                <div class="especialidades-box">
-                  <i class="bi bi-code-square"></i>
-                  <h3>Website</h3>  
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>
-                </div><!--especialidades-box-->
-                <div class="especialidades-box">
-                  <i class="bi bi-bag"></i>
-                  <h3>Loja online</h3>  
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>
-                </div><!--especialidades-box-->
-                <div class="especialidades-box">
-                  <i class="bi bi-wordpress"></i>
-                  <h3>Wordpress</h3>  
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>
-                </div><!--especialidades-box-->
-            </div><!--flex-->
-        </div><!--interface-->
-        </section><!--especialidades-->
-        <section class="sobremim">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                      <i class="bi bi-code-square"></i>
+                      <h3>Website</h3>  
+                      <p>Desenvolvo sites institucionais, blogs e landing pages responsivas. Meu foco é em projetos de pequena a média complexidade, garantindo uma entrega de qualidade com foco na experiência do usuário.</p>
+                    </div><!-- Fim da div .especialidades-box -->
+
+                    <div class="especialidades-box">
+                      <i class="bi bi-bag"></i>
+                      <h3>Loja online</h3>  
+                      <p>Criação de interfaces e layouts para lojas virtuais, com foco em design responsivo e uma experiência de compra intuitiva e agradável para o usuário.</p>
+                    </div><!-- Fim da div .especialidades-box -->
+
+                    <div class="especialidades-box">
+                      <i class="bi bi-wordpress"></i>
+                      <h3>Wordpress</h3>  
+                      <p>Implementação e personalização de temas e plugins em WordPress, oferecendo uma solução robusta e de fácil gerenciamento para o seu conteúdo.</p>
+                    </div><!-- Fim da div .especialidades-box -->
+                </div><!-- Fim da div .flex -->
+            </div><!-- Fim da div .interface -->
+        </section><!-- Fim da section .especialidades -->
+
+        <section class="sobremim" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobremim">
-                        <img src="images/img-sobremim.png" alt="">
-                    </div><!--imgsobremim-->
+                        <!-- CORREÇÃO DE ACESSIBILIDADE: Adicionado texto alternativo descritivo -->
+                        <img src="images/img-sobremim.png" alt="Tadeu Felipe trabalhando em seu notebook">
+                    </div><!-- Fim da div .img-sobremim -->
+
                     <div class="txt-sobremim">
                         <h2>MUITO PRAZER,<span>SOU TADEU FELIPE</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>
+                        <p>Tenho 21 anos, sou formado em Análise e Desenvolvimento de Sistemas e atualmente trabalho como técnico de suporte em um provedor de internet.</p>
+                        <p>Como desenvolvedor júnior, busco aplicar meus conhecimentos para criar soluções digitais eficientes e criativas. Embora minha experiência profissional em desenvolvimento seja inicial, já realizei projetos com WordPress e possuo uma base sólida em redes de comunicação.</p>
                         <div class="btn-social">
-                            <a href="" class="href"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="" class="href"><button><i class="bi bi-twitter-x"></i></button></a>
-                            <a href="" class="href"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="" class="href"><button><i class="bi bi-github"></i></button></a>
-                        </div><!--btnsocial-->
-                    </div><!--txt-sobremim-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--sobremim-->
-        </header>   
+                            <!-- CORREÇÃO SEMÂNTICA: A tag <button> foi removida de dentro do link <a>. O link agora é o elemento principal e pode ser estilizado via CSS. -->
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-github"></i></a>
+                        </div><!-- Fim da div .btn-social -->
+                    </div><!-- Fim da div .txt-sobremim -->
+                </div><!-- Fim da div .flex -->
+            </div><!-- Fim da div .interface -->
+        </section><!-- Fim da section .sobremim -->
 
-        
+        <!-- CORREÇÃO DE QUALIDADE: Ortografia de "Portfólio" -->
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/telecom.jpg);">
+                        <div class="overlay">Site ER Telecom</div>
+                    </div><!-- Fim da div .img-port -->
+                    <div class="img-port" style="background-image: url(images/telecom.jpg);">
+                        <div class="overlay">Site ER Telecom</div>
+                    </div><!-- Fim da div .img-port -->
+                    <div class="img-port" style="background-image: url(images/telecom.jpg);">
+                        <div class="overlay">Site ER Telecom</div>
+                    </div><!-- Fim da div .img-port -->
+                </div><!-- Fim da div .flex -->
+            </div><!-- Fim da div .interface -->
+        </section><!-- Fim da section .portfolio -->
+        <section class="formulario" id="contato">
+            <div class="interface">
+                <h2 class="titulo">CONVERSE <span>COMIGO.</span></h2>
+                <form action="" class="action">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu número de telefone:" required>
+                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+    </main> <!-- CORREÇÃO ESTRUTURAL: A tag </main> fecha aqui, finalizando o conteúdo principal. -->
+
+    <!-- CORREÇÃO ESTRUTURAL: Todas as tags extras e incorretas que estavam aqui (</header>, <section>, <body>, <html>) foram removidas. -->
+
+</body>
+</html>
