@@ -250,6 +250,9 @@ section.portfolio .flex{
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+
 }
 
 .img-port:hover{
