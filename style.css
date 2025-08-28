@@ -1,4 +1,4 @@
-/* DEFINIÇÃO DE VARIÁVEIS GLOBAIS */
+/*VARIÁVEIS GLOBAIS */
 :root{
     --cor-verde: #33ff00;
     --cor-branca: #ffffff;
@@ -180,8 +180,6 @@ section.sobremim .flex{
     align-items: center;
     gap: 60px;
 }
-
-/* CÓDIGO ADICIONADO PARA O CONTORNO DA FOTO */
 .img-sobremim {
     width: 380px;
     height: 380px;
@@ -410,4 +408,3 @@ footer p span {
     color: #33ff00; 
     font-weight: 600;
 }
-/* FIM DO RODAPÉ*/
